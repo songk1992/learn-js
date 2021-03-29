@@ -1,13 +1,17 @@
-
-function createNinja(name, weapon){
-	return{
-		name: name,
-		weapon: weapon,
-		attack(){
-			return 'attack with ' + weapon
-		}
+const ninjaFunction = {
+	attack(){
+		return 'attack with' + this.weapon
 	}
 }
 
-const gamja = createNinja('gamja', '칼')
+function createNinja(name, weapon){
+	let newNinja = Object.create(ninjaFunction)
+	newNinja.name = name;
+	newNinja.weapon = weapon;
+	return newNinja;
+}
+
+const gamja = createNinja('감자', '칼')
 console.log(gamja.attack())
+const goguma = createNinja('고구마', '도끼')
+console.log(goguma.attack())
