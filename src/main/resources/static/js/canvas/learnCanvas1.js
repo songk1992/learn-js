@@ -5,6 +5,7 @@ var c = document.getElementById("mycanvas");
 console.log(c);
 var ctx = c.getContext("2d");
 
+/*
 var image = new Image();
 image.onload = function() {
 	console.log("Loaded image");
@@ -19,5 +20,9 @@ var path = window.location.pathname;
 rootPath = rootPath + "images/"
 let imagePath =  rootPath + "jesus.png"
 image.src = imagePath;
+*/
+
+ctx.fillRect(100,100,100,100);
+ctx.strokeRect(50,50,50,50);
 
 }
