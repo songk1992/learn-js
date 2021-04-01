@@ -24,6 +24,10 @@ Note
 
 <br />
 
+[Udacity Canvas basics(free)](https://classroom.udacity.com/courses/ud292, "Udacity Canvas basics(free)")
+
+<br />
+
 # 온라인 코딩
 
 [https://replit.com/](https://replit.com/, "https://replit.com/")
