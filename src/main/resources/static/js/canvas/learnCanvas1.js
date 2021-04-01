@@ -22,7 +22,20 @@ let imagePath =  rootPath + "jesus.png"
 image.src = imagePath;
 */
 
-ctx.fillRect(100,100,100,100);
-ctx.strokeRect(50,50,50,50);
+ctx.fillStyle = "blue";
+ctx.fillRect(0,0,50,50);
 
+// Save state with blue fill
+ctx.save();
+ctx.fillStyle = "green";
+ctx.strokeStyle= "#33CC33";
+ctx.strokeRect(100,100,30,30);
+ctx.fillRect(100,100,10,10);
+// Restore to blue fill
+ctx.restore();
+
+ctx.fillRect(200,10,20,20);
+
+ctx.strokeText("감자 고구마 둘다 맛있다", 50, 10);
+ctx.fillText("감자 고구마 둘다 맛있다", 50, 10);
 }
