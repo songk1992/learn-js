@@ -64,10 +64,25 @@ function notGood(num){
 console.log(notGood(5));
 
 //Imperative Declartive
-for(let i=0; i< 1000; i++){
+for(let i=0; i< 5; i++){
 	console.log(i);
 }
 [1,2,3,4,5].forEach(item => console.log(item));
 
+//Immutability
+const obj = {name: 'Kim'}
+function clone(obj) {
+	return {...obj};
+}
 
+function updateName(obj) {
+	const obj2 = clone(obj);
+	obj2.name = 'Sim'
+	return obj2
+}
 
+updateName(obj);
+console.log(obj);
+
+const updatedObj = updateName(obj);
+console.log(updatedObj);
