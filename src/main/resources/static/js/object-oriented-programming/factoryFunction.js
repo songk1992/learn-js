@@ -6,14 +6,14 @@ class Character{
 		this.weapon = weapon;
 		}
 	
-	attack = function() {
+	attack(){
 		return 'attack with' + this.weapon
 		}
 	
-	getAge = function(){
+	getAge(){
 		return this.#age;
 	}	
-	setAge = function(age){
+	setAge(age){
 		this.#age = age;
 	}
 }
@@ -33,6 +33,10 @@ class Elf extends Character {
 	makeTreeHouse(){
 		return '나무위에 트리하우스가 보인다';
 	}
+  	attack(){
+    console.log(super.attack());
+    return `I am ${this.color} elf! my name is ${this.name} `
+  }
 }
 
 
