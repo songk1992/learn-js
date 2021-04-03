@@ -16,11 +16,11 @@ Note
 
 # 📓 자바스크립트 참고 강의 (영문)
 
-[JavaScript: The Advanced Concepts (2021)](https://www.udemy.com/course/advanced-javascript-concepts/, "JavaScript: The Advanced Concepts (2021)")
+[JavaScript: The Advanced Concepts (2021)](https://www.udemy.com/course/advanced-javascript-concepts/ "JavaScript: The Advanced Concepts (2021)")
 
 <br />
 
-[JavaScript Projects Games 55 Modern Dynamic Interactive web](https://www.udemy.com/course/javascript-course-projects/, "JavaScript Projects Games 55 Modern Dynamic Interactive web")
+[JavaScript Projects Games 55 Modern Dynamic Interactive web](https://www.udemy.com/course/javascript-course-projects/ "JavaScript Projects Games 55 Modern Dynamic Interactive web")
 
 <br />
 
@@ -29,18 +29,18 @@ Note
 
 # 캔버스 스터디<br />
 
-[Udacity Canvas basics(free)](https://classroom.udacity.com/courses/ud292, "Udacity Canvas basics(free)")
+[Udacity Canvas basics(free)](https://classroom.udacity.com/courses/ud292 "Udacity Canvas basics(free)")
 
 <br />
 
-[Canvas tutorial MDN(영어)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial, "Canvas tutorial MDN(영어)")
+[Canvas tutorial MDN(영어)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial "Canvas tutorial MDN(영어)")
 
 <br />
 
-[HTML Canvas Deep Dive(영어)](https://joshondesign.com/p/books/canvasdeepdive/toc.html, "HTML Canvas Deep Dive(영어)")
+[HTML Canvas Deep Dive(영어)](https://joshondesign.com/p/books/canvasdeepdive/toc.html "HTML Canvas Deep Dive(영어)")
 
 <br />
 
 # 온라인 코딩
 
-[https://replit.com/](https://replit.com/, "https://replit.com/")
+[https://replit.com/](https://replit.com/ "https://replit.com/")
