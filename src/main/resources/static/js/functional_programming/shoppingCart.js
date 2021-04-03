@@ -86,3 +86,17 @@ console.log(obj);
 
 const updatedObj = updateName(obj);
 console.log(updatedObj);
+
+// currying
+const multiply = (a, b) => a*b;
+const curriedMultiply = (a) => (b) => a * b;
+const curriedMultiply5 = curriedMultiply(5);
+
+console.log(curriedMultiply(5)(3));
+console.log(curriedMultiply5(3));
+
+//partial application
+const multiply2 = (a, b,c) => a*b*c;
+const partialMulitplyBy5 = multiply2.bind(null, 5)
+console.log(partialMulitplyBy5(4, 10));
+
