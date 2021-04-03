@@ -44,3 +44,26 @@ function Buy(){
 addItem(stock);
 addTax(user.cart);
  Buy();
+
+
+
+
+
+
+
+
+
+
+
+//Indempotence:
+// 
+function notGood(num){
+	return Math.random();
+}
+
+console.log(notGood(5));
+
+
+
+
+
