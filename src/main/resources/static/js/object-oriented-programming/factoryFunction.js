@@ -1,5 +1,6 @@
 
 class Character{
+	#age ="";
 	constructor(name, weapon){
 		this.name = name;
 		this.weapon = weapon;
@@ -8,6 +9,13 @@ class Character{
 	attack = function() {
 		return 'attack with' + this.weapon
 		}
+	
+	getAge = function(){
+		return this.#age;
+	}	
+	setAge = function(age){
+		this.#age = age;
+	}
 }
 
 class Human extends Character {
@@ -36,4 +44,11 @@ const elfie = new Elf('산타의엘프', '단도', '검정');
 console.log(elfie);
 console.log(elfie.attack());
 console.log(elfie.makeTreeHouse());
+
+// private 이여서 접근 불가
+console.log(elfie.age);
+
+// private 이여서 접근 불가
+elfie.setAge(1000);
+console.log(elfie.getAge());
 
