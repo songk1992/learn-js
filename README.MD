@@ -24,7 +24,20 @@ Note
 
 <br />
 
+
+<br />
+
+# 캔버스 스터디<br />
+
 [Udacity Canvas basics(free)](https://classroom.udacity.com/courses/ud292, "Udacity Canvas basics(free)")
+
+<br />
+
+[Canvas tutorial MDN(영어)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial, "Canvas tutorial MDN(영어)")
+
+<br />
+
+[HTML Canvas Deep Dive(영어)](https://joshondesign.com/p/books/canvasdeepdive/toc.html, "HTML Canvas Deep Dive(영어)")
 
 <br />
 
