@@ -11,10 +11,13 @@
 	<link th:href="@{/styles/main.css}" rel="stylesheet" />
 
 	<!-- Script -->
-	<script type="text/javascript" th:src="@{/js/functional_programming/shoppingCart.js}"></script>
+	<script type="text/javascript" th:src="@{/js/async_programming/async.js}"></script>
+	
+	<!-- 실시간 마우스 위치 표시 -->
+	<script type="text/javascript" th:src="@{/js/async_programming/getMousePosition.js}"></script>
 </head> 
 
-<body>
+<body id="para">
 
 
 <h1>Hello</h1>
@@ -22,6 +25,23 @@
 <a th:href="@{/learn/canvas1}"> 캔버스 배우기1 </a><br />
 <a th:href="@{/learn/canvas2}"> 캔버스 배우기2 </a><br />
 
+
+
+
+
+
+
+<div class="box">
+  <p>
+    Move the mouse around in this box to watch its coordinates change.
+  </p>
+  <p>
+    <code>pageX</code>: <span id="x">n/a</span>
+  </p>
+  <p>
+    <code>pageY</code>: <span id="y">n/a</span>
+  </p>
+</div>
 
 </body> 
 
