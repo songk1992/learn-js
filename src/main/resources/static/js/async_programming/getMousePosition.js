@@ -1,6 +1,5 @@
 setTimeout(()=>{
 let elem = document.getElementById('para');
-	console.log(elem);
 	
 elem.addEventListener("click", event => {
 	console.log(event.pageX, event.pageY);
