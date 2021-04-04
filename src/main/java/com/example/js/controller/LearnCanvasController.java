@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class LearnCanvasController {
 	@GetMapping("learn/canvas1")
 	public String LearnCanvas1() {
-		return "view/canvas/learn-canvas1.html";
+		return "view/n2021/canvas/learn-canvas1.html";
 	}
 	
 	@GetMapping("learn/canvas2")
 	public String LearnCanvas2() {
-		return "view/canvas/learn-canvas2.html";
+		return "view/n2021/canvas/learn-canvas2.html";
 	}
 }
