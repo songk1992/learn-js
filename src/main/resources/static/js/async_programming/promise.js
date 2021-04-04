@@ -36,6 +36,7 @@ Promise.all(urls.map(url =>{
 	console.log(results[1])
 	console.log(results[2])
 }).catch(() => console.log('error'))
+.finally(()=> console.log('항상 실행'))
 */
 
 //////////////////////////////////////// 방법2 Async Await (방법1 보다 최신 방법)
@@ -70,3 +71,21 @@ const getData = async function(){
 }
 
 getData();
+
+const getData2 = async function(){
+	const arrayOfPromises = urls.map(url => fetch(url));
+	for await (let request of arrayOfPromises){
+		const data = await request.json();
+		console.log(data);
+	}
+}
+
+getData2();
+
+
+
+
+
+
+
+
