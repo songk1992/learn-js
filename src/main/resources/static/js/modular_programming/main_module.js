@@ -1,5 +1,8 @@
 
+import {outsider, hello, jump } from './hello_module.js';
 
-setTimeout(()=>{
-	console.log(helloModule.hello());
-}, 0);
+console.log(outsider);
+console.log(hello());
+console.log(++uid);
+console.log(++uid);
+console.log(++uid);
