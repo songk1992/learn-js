@@ -5,48 +5,57 @@ const user = {
 	purchases: []
 }
 
-// 카트에 아이템을 추가한다
-function addItem(arr){
-	user.cart = [...user.cart, ...arr]
-	user.cart = deleteDuplicate(user.cart);
-	console.log("카트안에 있는 아이템 : " + user.cart);
+// 파이프와 compose는 방향만 반대
+
+const pipe = (f,g) => (...args) => g(f(...args));
+purchaseItem(
+	addItemToCart,
+	applyTaxToItems,
+	buyItem,
+	emtyCart,
+)(user, {name: '사과', price: 200})
+
+
+function purchaseItem(...fns) {
+	return fns.reduce(pipe)
+} 
+
+function addItemToCart(user, item){
+	const updateCart = user.cart.concat(item)
+	return Object.assign({}, user, {cart:updateCart })
 }
 
-// 객체가 배열이 아닌 경우 중복값 제거
-function deleteDuplicate(arr){
-	return [...new Set(arr)];
+function applyTaxToItems(user){
+	const {cart} = user;
+	const taxRate = 1.15;
+	const updatedCart = cart.map(item => {
+		return {
+			name: item.name,
+			price: item.price * taxRate
+		}
+	})
+	return Object.assign({},user,{cart:updatedCart})
 }
 
-// 아이템
-var stock = [
-	{name: "바나나", price: 1000, count :1},
-	{name: "감자", price: 500, count :1},
-	{name: "고구마", price: 2000, count :3},
-]
-
-// add 5% tax
-function addTax(arr){
-for(i=0;i<arr.length;i++){
-	arr[i]['price'] = arr[i]['price'] * 1.05;
-	console.log(arr[i]['name'] + arr[i]['price']);
-}
+function buyItem(user){
+	return Object.assign({},user,{purchases:user.cart})
 }
 
-// Buy item
-function Buy(){
-	user.purchases = [...user.cart];
-	user.cart = [];
-	console.log(user.cart);
-	console.log(user.purchases);
+function emtyCart(user){
+	return Object.assign({},user,{cart:[]})
 }
 
 
-addItem(stock);
-addTax(user.cart);
- Buy();
+console.log(
+purchaseItem(
+	addItemToCart,
+	applyTaxToItems,
+	buyItem,
+	emtyCart,
+)(user, {name: '사과', price: 200})
+)
 
-
-
+///////////////////////////////
 
 
 
