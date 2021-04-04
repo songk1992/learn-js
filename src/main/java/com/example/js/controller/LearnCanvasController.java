@@ -14,4 +14,9 @@ public class LearnCanvasController {
 	public String LearnCanvas2() {
 		return "view/n2021/canvas/learn-canvas2.html";
 	}
+	
+	@GetMapping("learn/module")
+	public String LearnModule() {
+		return "view/n2021/learn_module.html";
+	}
 }
