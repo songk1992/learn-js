@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>Car Racer1</title>
+	
+	<!-- CSS -->
+	<link th:href="@{/styles/n2021/mini_game/car_racer_1/car_racer.css}" rel="stylesheet" />
+
+	<!-- Script -->
+	<script type="text/javascript" th:src="@{/js/n2021/mini_game/car_racer_1/main.js}"></script>
+	
+	<!-- 실시간 마우스 위치 표시 -->
+	<script type="text/javascript" th:src="@{/js/n2021/async_programming/get_mouse_position.js}"></script>
+</head> 
+
+<body id="para">
+
+
+<h1>Hello</h1>
+
+
+
+
+
+
+<div class="box">
+  <p>
+    Move the mouse around in this box to watch its coordinates change.
+  </p>
+  <p>
+    <code>pageX</code>: <span id="x">n/a</span>
+  </p>
+  <p>
+    <code>pageY</code>: <span id="y">n/a</span>
+  </p>
+</div>
+
+</body> 
+
+</html>
