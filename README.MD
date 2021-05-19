@@ -52,3 +52,12 @@ Note
 # 온라인 코딩
 
 [https://replit.com/](https://replit.com/ "https://replit.com/")
+
+
+<br />
+
+# 서적
+
+JavaScript: The Definitive Guide, 7th Edition
+
+Eloquent JavaScript 3rd edition (2018)
